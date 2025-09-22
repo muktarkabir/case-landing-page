@@ -1,6 +1,6 @@
 import "./reset.css";
 import "./global-styles.css";
-import { joinWaitlist } from "./modules/firebase.js";
+import { joinWaitlist, listenForWaitlistCount } from "./modules/firebase.js";
 import { emailIsValid, form, emailField } from "./modules/dom-stuff.js";
 
 form.addEventListener("submit", async () => {
@@ -8,3 +8,5 @@ form.addEventListener("submit", async () => {
     await joinWaitlist(emailField.value.trim());
   }
 });
+
+listenForWaitlistCount();

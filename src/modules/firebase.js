@@ -7,6 +7,7 @@ import {
   getDocs,
   query,
   orderBy,
+  onSnapshot,
 } from "firebase/firestore";
 import { showSpinner } from "./dom-stuff";
 
@@ -45,5 +46,15 @@ export async function getWaitlist() {
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     console.log(doc.id, " => ", doc.data());
+  });
+}
+
+// Real-time waitlist counter
+export function listenForWaitlistCount() {
+  const q = query(waitlistRef); // simple query to listen to entire collection
+  onSnapshot(q, (snapshot) => {
+    const count = snapshot.size; // total documents in waitlist
+    document.getElementById("waitlistCount").innerText = count;
+    console.log("🔥 Live waitlist count:", count);
   });
 }
