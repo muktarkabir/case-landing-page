@@ -1,6 +1,6 @@
 const emailErrorMessage = document.querySelector("#email-feedback");
-const form = document.querySelector("form#waitlistForm");
-const emailField = form.querySelector("input");
+export const form = document.querySelector("form#waitlistForm");
+export const emailField = form.querySelector("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -46,4 +46,17 @@ export const validateEmail = (input) => {
 
 const setUserFeedback = ({ element, message = "" }) => {
   element.textContent = message;
+};
+
+export const showSpinner = (show) => {
+  const button = form.querySelector("button");
+  if (show) {
+    button.innerHTML = `
+  <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 50 50">
+    <circle cx="25" cy="25" r="20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </svg>
+`;
+  } else {
+    button.innerHTML = "Join Now";
+  }
 };

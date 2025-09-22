@@ -1,13 +1,10 @@
 import "./reset.css";
 import "./global-styles.css";
-import { app } from "./modules/firebase-config.js";
-import { emailIsValid } from "./modules/dom-stuff.js";
+import { joinWaitlist } from "./modules/firebase.js";
+import { emailIsValid, form, emailField } from "./modules/dom-stuff.js";
 
-console.log(app);
-
-const form = document.querySelector("form#waitlistForm");
-form.addEventListener("submit", () => {
+form.addEventListener("submit", async () => {
   if (emailIsValid) {
-    console.log("Yayyy");
+    await joinWaitlist(emailField.value.trim());
   }
 });
