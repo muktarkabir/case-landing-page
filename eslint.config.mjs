@@ -15,4 +15,8 @@ export default defineConfig([
   },
   { rules: { "no-unused-vars": "warn", "no-undef": "warn" } },
   eslintConfigPrettier,
+   {
+		// Note: there should be no other properties in this object
+		ignores: ["dist/"],
+	},
 ]);
