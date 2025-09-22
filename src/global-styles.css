@@ -1,12 +1,14 @@
-/* Serif for headings */
-@import "@fontsource/source-serif-pro/400.css"; /* Regular */
-@import "@fontsource/source-serif-pro/600.css"; /* Semi-bold */
-@import "@fontsource/source-serif-pro/700.css"; /* Bold */
+/* Source Serif Pro (400, 600, 700) + Inter (400, 500, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* Sans-serif for body */
-@import "@fontsource/inter/400.css"; /* Regular */
-@import "@fontsource/inter/500.css"; /* Medium */
-@import "@fontsource/inter/600.css"; /* Semi-bold */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 
 body {
   font-family: "Inter", sans-serif;
