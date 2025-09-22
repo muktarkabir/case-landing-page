@@ -1,7 +1,7 @@
 const emailErrorMessage = document.querySelector("#email-feedback");
 export const form = document.querySelector("form#waitlistForm");
 export const emailField = form.querySelector("input");
-
+//comment
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });

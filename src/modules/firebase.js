@@ -11,7 +11,7 @@ import {
 } from "firebase/firestore";
 import { showSpinner } from "./dom-stuff";
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration for reaaaal
 const firebaseConfig = {
   apiKey: "AIzaSyCAOAVtJhkB2srABaRg42x20hVngH9HGeI",
   authDomain: "case-landing-page-45db9.firebaseapp.com",
