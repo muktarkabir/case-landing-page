@@ -35,6 +35,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/source-serif-pro": "^5.2.5",
     "firebase": "^12.3.0"
   }
 }
