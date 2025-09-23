@@ -9,7 +9,7 @@ import {
   orderBy,
   onSnapshot,
 } from "firebase/firestore";
-import { showSpinner } from "./dom-stuff";
+import { showSpinner, giveFeedBack } from "./dom-stuff";
 
 // Your web app's Firebase configuration for reaaaal
 const firebaseConfig = {
@@ -34,8 +34,10 @@ export async function joinWaitlist(email) {
       timestamp: serverTimestamp(),
     });
     console.log("✅ Successfully added to waitlist!");
+    giveFeedBack(true);
   } catch (error) {
     console.error("❌ Error adding to waitlist: ", error);
+    giveFeedBack(false);
   } finally {
     showSpinner(false);
   }

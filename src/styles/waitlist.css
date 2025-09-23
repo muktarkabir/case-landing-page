@@ -124,3 +124,13 @@ form.waitlist-form {
   font-weight: 500;
   display: none; /* shown with JS later */
 }
+
+.error{
+      margin-top: 1rem;
+  padding: 0.8rem;
+  background: #f8a6a6;
+  border-radius: 0.5rem;
+  color: #66100a;
+  font-weight: 500;
+  display: none; 
+}

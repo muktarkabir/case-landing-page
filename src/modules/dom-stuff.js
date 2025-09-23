@@ -80,3 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+export const giveFeedBack = (successful) => {
+  const success = document.querySelector(".success");
+  const error = document.querySelector(".error");
+  if (successful) {
+    success.style.display = "block";
+    error.style.display = "none";
+  } else {
+    error.style.display = "block";
+    success.style.display = "none";
+  }
+};
