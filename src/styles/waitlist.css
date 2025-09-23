@@ -1,12 +1,13 @@
 
 section.waitlist-section {
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     background: #F1F5F9;
     width: 100%;
     margin: 3rem auto;
     display: grid;
     place-items: center;
+    min-height: 500px;
 }
 
 .waitlist-content{

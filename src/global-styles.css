@@ -755,3 +755,69 @@ body.dark #mobile-menu a {
   color: #bbb;
 }
 
+/* Base layout */
+.testimonials {
+  padding: 4rem 1rem;
+  background: #f9fafb;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimonials h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--main-color); /* accent line */
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid */
+.testimonials .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .testimonials .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card */
+.grid.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 2.8s ease ;
+}
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Text */
+.quote {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-weight: bold;
+  color: #111827;
+}
