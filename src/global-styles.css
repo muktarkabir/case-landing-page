@@ -253,7 +253,8 @@ body.dark #mobile-menu a {
   transition: background-color 0.2s;
 }
 #hero .btn-outline:hover {
-  background-color: rgba(0, 102, 255, 0.1);
+  background: rgba(235, 188, 128,0.15);
+
 }
 
 /* Features list */
@@ -879,3 +880,101 @@ body.dark #mobile-menu a {
   color: var(--main-color);
 }
 
+
+/* Footer Base */
+.footer {
+  background: #111827; /* dark background */
+  color: #d1d5db; /* gray-300 */
+  padding: 3rem 1rem;
+  text-align: center;
+  a{
+    text-decoration: none;
+  }
+}
+
+.footer .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Contact */
+.footer .contact {
+  margin-bottom: 1.5rem;
+}
+
+.footer .contact .heading {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.footer .contact a {
+  color: var(--main-color); /* primary */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .contact a:hover {
+  text-decoration: underline;
+  color: var(--main-color); /* accent hover */
+}
+
+/* Buttons */
+.footer .actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer .btn-primary {
+  background: var(--main-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer .btn-primary:hover {
+  background: var(--main-color);
+  transform: scale(1.05);
+}
+
+.footer .btn-outline {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer .btn-outline:hover {
+  background: rgba(235, 188, 128,0.15);
+  transform: scale(1.05);
+}
+
+/* Policy */
+.footer .policy {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.footer .policy a {
+  text-decoration: underline;
+  color: var(--main-color);
+  transition: color 0.3s ease;
+}
+
+.footer .policy a:hover {
+  color: var(--main-color);
+}
+
+/* Copyright */
+.footer .copy {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
