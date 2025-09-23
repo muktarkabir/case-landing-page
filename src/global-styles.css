@@ -821,3 +821,61 @@ body.dark #mobile-menu a {
   font-weight: bold;
   color: #111827;
 }
+
+/* Layout */
+.faq {
+  padding: 4rem 1rem;
+  background: #f9fafb;
+}
+
+.faq .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Accordion */
+.faq details {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: var(--main-color);
+  transition: transform 0.3s ease;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+  transform: rotate(180deg);
+}
+
+.faq p {
+  margin-top: 0.75rem;
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Hover effect */
+.faq summary:hover {
+  color: var(--main-color);
+}
+
