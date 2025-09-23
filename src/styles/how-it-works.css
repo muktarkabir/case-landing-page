@@ -1,0 +1,102 @@
+/* Layout */
+.how-it-works {
+    background: #F1F5F9;
+
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.how-it-works .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+/* Steps */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: #111827;
+}
+
+.step p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.circle {
+  background: var(--main-color);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Examples */
+.examples {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .examples {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.card pre {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  color: #374151;
+}
+
+/* Note */
+.note {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}

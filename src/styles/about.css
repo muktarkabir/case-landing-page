@@ -1,0 +1,86 @@
+/* ===== About Section ===== */
+#about {
+  padding: 1rem 0; /* py-16 */
+}
+
+@media (min-width: 768px) {
+  #about {
+    padding: 6rem 0; /* md:py-24 */
+  }
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-6 */
+}
+
+/* Section header */
+#about h2 {
+  font-size: 2.6rem; /* text-3xl */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color:  #111827;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #about h2 {
+    font-size: 3rem; /* md:text-4xl */
+  }
+}
+
+#about p {
+  color: #475569; /* slate-600 */
+}
+
+.dark #about h2 {
+  color: #ffffff;
+}
+
+.dark #about p {
+  color: #94a3b8; /* slate-400 */
+}
+
+#about .section-intro {
+  max-width: 48rem; /* max-w-3xl */
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+/* Features grid */
+#about .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  gap: 1.5rem; /* gap-6 */
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #about .features {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1024px) {
+  #about .features {
+    grid-template-columns: repeat(5, 1fr); /* lg:grid-cols-5 */
+  }
+}
+
+/* Feature card */
+#about .feature {
+  background: #F1F5F9;
+  padding: 1.5rem;
+  border-radius: 0.75rem; /* rounded-lg */
+}
+
+
+#about .feature p {
+  font-weight: 600;
+  color: var(--text-dark, #111827);
+}
+
+.dark #about .feature p {
+  color: #ffffff;
+}

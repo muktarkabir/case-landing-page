@@ -1,0 +1,66 @@
+/* Section layout */
+.mission {
+  padding: 4rem 1rem;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.mission .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .mission .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Text */
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.mission p {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* List */
+.mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mission-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.mission-list .check {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Image */
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
