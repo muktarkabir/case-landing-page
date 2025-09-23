@@ -60,3 +60,23 @@ export const showSpinner = (show) => {
     button.innerHTML = "Join Now";
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    menuButton.setAttribute(
+      "aria-expanded",
+      String(mobileMenu.classList.contains("active")),
+    );
+  });
+
+  document.querySelectorAll("#mobile-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+});

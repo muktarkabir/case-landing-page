@@ -3,26 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <title>CASE: Be Heard</title>
   </head>
   <body>
-    <section class="waitlist-section">
-      <h2 class="waitlist-title">Join the Waitlist</h2>
-      <p class="waitlist-subtitle">Be among the first to access our platform</p>
+    <header id="header">
+      <div class="container">
+        <a href="#hero" class="text-logo">CASE</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#mission">Mission</a>
+          <a href="#impact">Impact</a>
+          <a href="#contact">Contact</a>
+          <a href="#waitlist" class="join-btn">Join waitlist</a>
+        </nav>
 
-      <form id="waitlistForm" class="waitlist-form" novalidate>
-        <div class="input-group">
-          <input type="email" id="email" placeholder="Enter your email" />
-          <p id="email-feedback"></p>
-        </div>
+        <button id="mobile-menu-button" style="width: 30px; height: 30px;" aria-controls="mobile-menu" aria-expanded="false">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6h16M4 12h16m-7 6h7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <a href="#about">About</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#mission">Mission</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
+        <a href="#waitlist" class="join-btn">Join waitlist</a>
+      </div>
+    </header>
 
-        <button type="submit">Join Now</button>
-      </form>
+    <main>
+      <section class="waitlist-section">
+        <h2 class="waitlist-title">Join the Waitlist</h2>
+        <p class="waitlist-subtitle">
+          Be among the first to access our platform
+        </p>
 
-      <p class="waitlist-note">
-        🎉 <span id="waitlistCount">0</span> people have already joined!
-      </p>
-    </section>
+        <form id="waitlistForm" class="waitlist-form" novalidate>
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Enter your email" />
+            <p id="email-feedback"></p>
+          </div>
+
+          <button type="submit">Join Now</button>
+        </form>
+
+        <p class="waitlist-note">
+          🎉 <span id="waitlistCount">0</span> people have already joined!
+        </p>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
