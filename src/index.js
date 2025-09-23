@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./global-styles.css";
+import "./styles/waitlist.css";
 import { joinWaitlist, listenForWaitlistCount } from "./modules/firebase.js";
 import { emailIsValid, form, emailField } from "./modules/dom-stuff.js";
 

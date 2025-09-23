@@ -1,0 +1,112 @@
+
+section.waitlist-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 3rem auto;
+}
+.waitlist-title {
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.waitlist-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+
+form.waitlist-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.input-group{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#email-feedback{
+  font-size: 0.8rem;
+  font-style: italic;
+  color: red;
+}
+
+.waitlist-form input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.waitlist-form input:focus {
+  border-color: #ebbc80;
+}
+
+.waitlist-form button {
+  background: #ebbc80;
+  border: none;
+  height: 54px;
+  width: 121px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+  /* depth */
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.25),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+
+  /* smooth transition */
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.waitlist-form button:hover {
+  filter: brightness(1.05); /* subtle glow effect */
+  transform: translateY(-2px); /* tiny lift on hover */
+  box-shadow:
+    0 6px 10px rgba(0, 0, 0, 0.35),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.2),
+    inset 0 2px 6px rgba(255, 255, 255, 0.4);
+}
+.waitlist-button:active {
+  transform: translateY(1px); /* squish down on press */
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.25),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.25);
+}
+.waitlist-note {
+  margin-top: 1.5rem;
+  color: #444;
+  font-size: 0.95rem;
+}
