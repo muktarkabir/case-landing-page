@@ -2,11 +2,15 @@
 section.waitlist-section {
     text-align: center;
     padding: 3rem 1rem;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    max-width: 500px;
+    background: #F1F5F9;
+    width: 100%;
     margin: 3rem auto;
+    display: grid;
+    place-items: center;
+}
+
+.waitlist-content{
+    max-width: 600px;
 }
 .waitlist-title {
   font-family: "Source Serif Pro", serif;
@@ -109,4 +113,14 @@ form.waitlist-form {
   margin-top: 1.5rem;
   color: #444;
   font-size: 0.95rem;
+}
+
+.success {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #d4f5d4;
+  border-radius: 0.5rem;
+  color: #0a662e;
+  font-weight: 500;
+  display: none; /* shown with JS later */
 }
