@@ -57,6 +57,9 @@
   gap: 1.5rem; /* gap-6 */
   text-align: center;
 }
+.feature p {
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   #about .features {
@@ -81,8 +84,6 @@
 #about .feature p {
   font-weight: 600;
   color: var(--text-dark, #111827);
+  text-align: center;
 }
 
-.dark #about .feature p {
-  color: #ffffff;
-}
