@@ -99,6 +99,17 @@ body.dark #header nav a {
   
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  flex: 1;
+}
+
+
 /* ===== Mobile Menu Button ===== */
 #mobile-menu-button {
   background: none;
