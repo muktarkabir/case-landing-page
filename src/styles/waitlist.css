@@ -5,7 +5,7 @@ section.waitlist-section {
     padding: 2rem 1rem;
     background: #F1F5F9;
     width: 100%;
-    margin: 3rem auto;
+    /* margin: 3rem auto; */
     display: grid;
     place-items: center;
     min-height: 500px;
@@ -76,7 +76,7 @@ form.waitlist-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
@@ -84,11 +84,7 @@ form.waitlist-form {
   transition:
     background 0.3s,
     transform 0.2s;
-  /* depth */
-  box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.25),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.15),
-    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+
 
   /* smooth transition */
   transition:
@@ -100,21 +96,15 @@ form.waitlist-form {
 .waitlist-form button:hover {
   filter: brightness(1.05); /* subtle glow effect */
   transform: translateY(-2px); /* tiny lift on hover */
-  box-shadow:
-    0 6px 10px rgba(0, 0, 0, 0.35),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.2),
-    inset 0 2px 6px rgba(255, 255, 255, 0.4);
 }
-.waitlist-button:active {
-  transform: translateY(1px); /* squish down on press */
-  box-shadow:
-    inset 0 2px 6px rgba(0, 0, 0, 0.25),
-    inset 0 -2px 4px rgba(255, 255, 255, 0.25);
-}
+
 .waitlist-note {
   margin-top: 1.5rem;
   color: #444;
   font-size: 0.95rem;
+  span{
+    color: #ebbc80;
+  }
 }
 
 .success {
