@@ -33,10 +33,10 @@ export async function joinWaitlist(email) {
       email: email,
       timestamp: serverTimestamp(),
     });
-    console.log("✅ Successfully added to waitlist!");
+    console.log("Successfully added to waitlist!");
     giveFeedBack(true);
   } catch (error) {
-    console.error("❌ Error adding to waitlist: ", error);
+    console.error("Error adding to waitlist: ", error);
     giveFeedBack(false);
   } finally {
     showSpinner(false);
@@ -57,6 +57,6 @@ export function listenForWaitlistCount() {
   onSnapshot(q, (snapshot) => {
     const count = snapshot.size; // total documents in waitlist
     document.getElementById("waitlistCount").innerText = count;
-    console.log("🔥 Live waitlist count:", count);
+    console.log("Live waitlist count:", count);
   });
 }
