@@ -11,14 +11,15 @@ import {
 } from "firebase/firestore";
 import { showSpinner, giveFeedBack } from "./dom-stuff";
 
-// Your web app's Firebase configuration for reaaaal
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCAOAVtJhkB2srABaRg42x20hVngH9HGeI",
-  authDomain: "case-landing-page-45db9.firebaseapp.com",
-  projectId: "case-landing-page-45db9",
-  storageBucket: "case-landing-page-45db9.firebasestorage.app",
-  messagingSenderId: "846517098023",
-  appId: "1:846517098023:web:74286111622b732cd46002",
+  apiKey: "AIzaSyBVEAyXVAiM5NPL2bdbegZdIUYROZQJ-YE",
+  authDomain: "case-be-heard-website.firebaseapp.com",
+  projectId: "case-be-heard-website",
+  storageBucket: "case-be-heard-website.firebasestorage.app",
+  messagingSenderId: "765706349267",
+  appId: "1:765706349267:web:5d5d15965005748f160226",
+  measurementId: "G-7G9PN4QGWY",
 };
 
 // Initialize Firebase
