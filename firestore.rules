@@ -1,9 +1,23 @@
 rules_version = '2';
-
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // Waitlist: public create-only
+    match /waitlist/{docId} {
+      allow create: if true; // anyone can submit to waitlist
+      allow read, update, delete: if false; // no one can read or change
+    }
+
+    // Meta: public read-only (e.g., for waitlist count)
+    match /meta/{docId} {
+      allow read: if true; // allow reading stats (like count)
+      allow write: if false; // block writes from frontend
+    }
+
+    // Fallback: block everything else
     match /{document=**} {
       allow read, write: if false;
     }
+
   }
 }
