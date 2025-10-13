@@ -1,9 +1,11 @@
 @import url("../global-styles.css");
 /* ===== HERO SECTION ===== */
 #hero {
-  background-color: #F8FAFC;
+  background: var(--blueish-bg);
   padding: 3rem 1.5rem;
+  width: 100%;
 }
+
 @media (min-width: 768px) {
   #hero {
     padding: 6rem 1.5rem;
@@ -12,15 +14,21 @@
 
 #hero .container {
   max-width: 1200px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
-@media (min-width: 768px) {
-  #hero .container {
-    grid-template-columns: 1fr 1fr;
+
+#hero .container > div {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+
+  &:first-of-type {
+    animation-delay: 0.2s;
+  }
+  &:last-of-type {
+    animation-delay: 0.4s;
   }
 }
 
@@ -64,7 +72,9 @@
   font-weight: 600;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s, background-color 0.2s;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
 }
 #hero .btn-primary:hover {
   transform: scale(1.05);
@@ -81,33 +91,39 @@
   transition: background-color 0.2s;
 }
 #hero .btn-outline:hover {
-  background: rgba(235, 188, 128,0.15);
-
+  background: rgba(235, 188, 128, 0.15);
 }
 
-/* Features list */
-#hero .features {
-  margin-bottom: 1.5rem;
-}
-#hero .features p {
-  font-size: 0.9rem;
-  color: #6b7280; /* slate-500 */
-  margin-bottom: 0.5rem;
+/* List */
+.mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#hero .priority-note {
-  font-size: 0.75rem;
-  color: #6b7280;
+.mission-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.mission-list .check {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 /* Right Column (Image) */
 #hero img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
-
 
 /* ===== Fade In Up Animation ===== */
 @keyframes fadeInUp {
@@ -121,15 +137,3 @@
   }
 }
 
-.animate-fade-in-up {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-/* Add optional staggered delays if you want */
-.animate-delay-200 {
-  animation-delay: 0.2s;
-}
-.animate-delay-400 {
-  animation-delay: 0.4s;
-}

@@ -4,6 +4,7 @@
 :root {
   --main-color: #ebbc80;
   --dark-color: #111827;
+  --blueish-bg:#f1f5f9;
   --text-dark: #333;
   --text-gray:#d1d5db;
   --header-bg:rgba(255, 255, 255, 0.8);
@@ -22,6 +23,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-dark);
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 
 .spinner {

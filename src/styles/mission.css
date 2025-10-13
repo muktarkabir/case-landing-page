@@ -35,28 +35,6 @@
   line-height: 1.6;
 }
 
-/* List */
-.mission-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mission-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-  color: #374151;
-}
-
-.mission-list .check {
-  color: var(--main-color);
-  font-weight: bold;
-  margin-right: 0.75rem;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
 
 /* Image */
 .image-wrapper img {

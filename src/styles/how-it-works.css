@@ -2,11 +2,10 @@
 
 /* Layout */
 .how-it-works {
-    background: #F1F5F9;
+    background: var(--blueish-bg);
 
   padding: 4rem 1rem;
   text-align: center;
-  font-family: sans-serif;
 }
 
 .how-it-works .container {
