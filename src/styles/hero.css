@@ -3,8 +3,6 @@
 #hero {
   background: var(--blueish-bg);
   padding: 3rem 1.5rem;
-  overflow-x: clip;
-  /* width: 100%; */
 }
 
 @media (min-width: 768px) {
@@ -46,13 +44,13 @@
 
 /* Left Column */
 #hero-headline {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   #hero-headline {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }
 
