@@ -3,11 +3,11 @@
 section.waitlist-section {
     text-align: center;
     padding: 2rem 1rem;
-    background: #F1F5F9;
+    background: var(--blueish-bg);
     width: 100%;
     /* margin: 3rem auto; */
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     min-height: 500px;
 }
 
@@ -65,11 +65,11 @@ form.waitlist-form {
 }
 
 .waitlist-form input:focus {
-  border-color: #ebbc80;
+  border-color: var(--main-color);
 }
 
 .waitlist-form button {
-  background: #ebbc80;
+  background: var(--main-color);
   border: none;
   height: 54px;
   width: 121px;
@@ -103,7 +103,7 @@ form.waitlist-form {
   color: #444;
   font-size: 0.95rem;
   span{
-    color: #ebbc80;
+    color: var(--main-color);
   }
 }
 

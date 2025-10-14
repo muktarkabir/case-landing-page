@@ -6,9 +6,8 @@ import "./styles/about.css";
 import "./styles/how-it-works.css";
 import "./styles/mission.css";
 import "./styles/gallery.css";
-import "./styles/impact.css";
-import "./styles/testimonials.css";
 import "./styles/faq.css";
+import "./styles/team.css";
 import { joinWaitlist, listenForWaitlistCount } from "./modules/firebase.js";
 import { emailIsValid, form, emailField } from "./modules/dom-stuff.js";
 
