@@ -1,18 +1,18 @@
 @import url("../global-styles.css");
 
 section.waitlist-section {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: var(--blueish-bg);
-    width: 100%;
-    /* margin: 3rem auto; */
-    display: flex;
-    justify-content: center;
-    min-height: 500px;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--blueish-bg);
+  width: 100%;
+  /* margin: 3rem auto; */
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
 }
 
-.waitlist-content{
-    max-width: 600px;
+.waitlist-content {
+  max-width: min(600px, 100%);
 }
 .waitlist-title {
   font-family: "Source Serif Pro", serif;
@@ -32,7 +32,6 @@ section.waitlist-section {
   color: #666;
 }
 
-
 form.waitlist-form {
   display: flex;
   gap: 0.5rem;
@@ -41,14 +40,14 @@ form.waitlist-form {
   flex-wrap: wrap;
 }
 
-.input-group{
-  flex: 1;
-  min-width: 300px;
+.input-group {
+  flex-basis: 300px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#email-feedback{
+#email-feedback {
   font-size: 0.8rem;
   font-style: italic;
   color: red;
@@ -85,7 +84,6 @@ form.waitlist-form {
     background 0.3s,
     transform 0.2s;
 
-
   /* smooth transition */
   transition:
     transform 0.15s ease,
@@ -102,7 +100,7 @@ form.waitlist-form {
   margin-top: 1.5rem;
   color: #444;
   font-size: 0.95rem;
-  span{
+  span {
     color: var(--main-color);
   }
 }
@@ -117,12 +115,12 @@ form.waitlist-form {
   display: none; /* shown with JS later */
 }
 
-.error{
-      margin-top: 1rem;
+.error {
+  margin-top: 1rem;
   padding: 0.8rem;
   background: #f8a6a6;
   border-radius: 0.5rem;
   color: #66100a;
   font-weight: 500;
-  display: none; 
+  display: none;
 }
