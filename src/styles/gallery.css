@@ -4,12 +4,14 @@
 .gallery {
   /* background-color: #F1F5F9; */
   padding: 3rem 1rem;
+  max-width: 100%;
 }
 
 /* Container */
 .gallery .container {
   max-width: 1100px;
   margin: 0 auto;
+  
 }
 
 /* Heading */
@@ -25,9 +27,11 @@
 
 /* Grid */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
   gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
   
 }
@@ -35,6 +39,7 @@
 /* Items */
 .gallery-item {
   text-align: center;
+  flex-basis: 250px;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
