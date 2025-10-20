@@ -2,9 +2,8 @@
 
 /* ===== About Section ===== */
 #about {
-  padding: 3rem 0; 
+  padding: 3rem 0;
 }
-
 
 #about .container {
   max-width: 1200px;
@@ -16,16 +15,13 @@
 #about h2 {
   margin-bottom: 1rem;
   font-weight: 700;
-  color:  #111827;
+  color: #111827;
   text-align: center;
 }
-
-
 
 #about p {
   color: #475569; /* slate-600 */
 }
-
 
 #about .section-intro {
   max-width: 48rem; /* max-w-3xl */
@@ -58,11 +54,10 @@
 
 /* Feature card */
 #about .feature {
-  background: #F1F5F9;
+  background: #f1f5f9;
   padding: 1.5rem;
   border-radius: 0.75rem; /* rounded-lg */
 }
-
 
 #about .feature p {
   font-weight: 600;
@@ -70,3 +65,32 @@
   text-align: center;
 }
 
+.section-intro {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 1s ease;
+
+}
+
+.section-intro.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#about .feature {
+  opacity: 0;
+  transform: translateX(90%) scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Stagger delays for each feature */
+#about .feature:nth-child(1) { transition-delay: 0.1s; }
+#about .feature:nth-child(2) { transition-delay: 0.2s; }
+#about .feature:nth-child(3) { transition-delay: 0.3s; }
+#about .feature:nth-child(4) { transition-delay: 0.4s; }
+#about .feature:nth-child(5) { transition-delay: 0.5s; }
+
+#about .features.show .feature {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}

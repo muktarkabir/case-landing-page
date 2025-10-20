@@ -92,3 +92,23 @@ export const giveFeedBack = (successful) => {
     success.style.display = "none";
   }
 };
+
+// Scroll Animations
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    console.log(entries);
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px",
+  },
+);
+const sectionIntro = document.querySelector("#about .section-intro");
+const featuresContainer = document.querySelector("#about .features");
+
+if (sectionIntro) observer.observe(sectionIntro);
+if (featuresContainer) observer.observe(featuresContainer);
