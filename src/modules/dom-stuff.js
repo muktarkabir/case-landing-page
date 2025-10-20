@@ -104,7 +104,7 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.15,
-    rootMargin: "0px 0px -50px",
+    rootMargin: "50px 0px -50px",
   },
 );
 const sectionIntro = document.querySelector("#about .section-intro");
@@ -115,6 +115,9 @@ const steps = howItWorksSection.querySelectorAll(".step");
 const step1 = steps[0];
 const step2 = steps[1];
 const step3 = steps[2];
+const missionSection = document.querySelector("section#mission");
+const missionText = missionSection.querySelector(".content");
+const missionImage = missionSection.querySelector(".image-wrapper");
 
 observer.observe(sectionIntro);
 observer.observe(featuresContainer);
@@ -122,3 +125,5 @@ observer.observe(howItWorksHeading);
 observer.observe(step1);
 observer.observe(step2);
 observer.observe(step3);
+observer.observe(missionImage);
+observer.observe(missionText);
