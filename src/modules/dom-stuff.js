@@ -109,6 +109,16 @@ const observer = new IntersectionObserver(
 );
 const sectionIntro = document.querySelector("#about .section-intro");
 const featuresContainer = document.querySelector("#about .features");
+const howItWorksSection = document.querySelector("#how-it-works");
+const howItWorksHeading = howItWorksSection.querySelector(".section-header");
+const steps = howItWorksSection.querySelectorAll(".step");
+const step1 = steps[0];
+const step2 = steps[1];
+const step3 = steps[2];
 
-if (sectionIntro) observer.observe(sectionIntro);
-if (featuresContainer) observer.observe(featuresContainer);
+observer.observe(sectionIntro);
+observer.observe(featuresContainer);
+observer.observe(howItWorksHeading);
+observer.observe(step1);
+observer.observe(step2);
+observer.observe(step3);
