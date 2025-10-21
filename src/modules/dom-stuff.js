@@ -137,9 +137,11 @@ const waitlistSection = document.querySelector(
 );
 const waitlistTitle = waitlistSection.querySelector(".waitlist-title");
 const waitlistSubTitle = waitlistSection.querySelector(".waitlist-subtitle");
-const waitlistForm = waitlistSection.querySelector("form");
 const waitlistNote = waitlistSection.querySelector(".waitlist-note");
 const otherWaitlistNote = waitlistSection.querySelector(".note");
+const faqSection = document.querySelector("section#faq");
+const faqTitle = faqSection.querySelector("h2");
+const faqs = faqSection.querySelector(".faqs");
 
 const animatedParts = [
   sectionIntro,
@@ -158,9 +160,11 @@ const animatedParts = [
   gallerySection,
   waitlistTitle,
   waitlistSubTitle,
-  waitlistForm,
+  form,
   waitlistNote,
   otherWaitlistNote,
+  faqTitle,
+  faqs,
 ];
 
 animatedParts.forEach((part) => observer.observe(part));
