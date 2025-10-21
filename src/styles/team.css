@@ -115,3 +115,44 @@
   filter: blur(0);
   visibility: visible;
 }
+
+.social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: #475569;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon svg {
+      max-width: 18px;
+      aspect-ratio: 1;
+    }
+
+    .social-icon.twitter:hover,.social-icon.linkedin:hover {
+      background: var(--main-color);
+      color: white;
+      transform: scale(1.1);
+    }
+
+
+
+    .divider {
+      color: #cbd5e1;
+      font-size: 1.5rem;
+      line-height: 1;
+    }

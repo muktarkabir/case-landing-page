@@ -4,6 +4,7 @@
 .faq {
   padding: 4rem 1rem;
   background: #f9fafb;
+  overflow-x: hidden;
 }
 
 .faq .container {
