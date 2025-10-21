@@ -5,6 +5,9 @@ export const emailField = form.querySelector("input");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+form.querySelector("button").addEventListener("click", () => {
+  validateEmail(emailField.value);
+});
 emailField.addEventListener("input", function () {
   validateEmail(this.value);
 });
