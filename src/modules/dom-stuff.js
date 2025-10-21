@@ -97,14 +97,14 @@ export const giveFeedBack = (successful) => {
 
 const observer = new IntersectionObserver(
   (entries) => {
-    console.log(entries);
     entries.forEach((entry) => {
+      console.log(entry.target);
       entry.target.classList.toggle("show", entry.isIntersecting);
     });
   },
   {
     threshold: 0.15,
-    rootMargin: "50px 0px -50px",
+    rootMargin: "50px 0px 0px",
   },
 );
 const sectionIntro = document.querySelector("#about .section-intro");
@@ -118,12 +118,27 @@ const step3 = steps[2];
 const missionSection = document.querySelector("section#mission");
 const missionText = missionSection.querySelector(".content");
 const missionImage = missionSection.querySelector(".image-wrapper");
+const teamSection = document.querySelector("section#team");
+const teamMembers = teamSection.querySelectorAll(".team-member");
+const ahmad = teamMembers[0];
+const mukhtar = teamMembers[1];
+const gent = teamMembers[2];
+const sdq = teamMembers[3];
 
-observer.observe(sectionIntro);
-observer.observe(featuresContainer);
-observer.observe(howItWorksHeading);
-observer.observe(step1);
-observer.observe(step2);
-observer.observe(step3);
-observer.observe(missionImage);
-observer.observe(missionText);
+const animatedParts = [
+  sectionIntro,
+  featuresContainer,
+  howItWorksHeading,
+  step1,
+  step2,
+  step3,
+  missionImage,
+  missionText,
+  teamSection,
+  ahmad,
+  mukhtar,
+  gent,
+  sdq,
+];
+
+animatedParts.forEach((part) => observer.observe(part));
