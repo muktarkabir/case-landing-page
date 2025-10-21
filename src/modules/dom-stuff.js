@@ -132,6 +132,15 @@ const mukhtar = teamMembers[1];
 const gent = teamMembers[2];
 const sdq = teamMembers[3];
 const gallerySection = document.querySelector("section#gallery");
+const waitlistSection = document.querySelector(
+  "section#waitlist .waitlist-content",
+);
+const waitlistTitle = waitlistSection.querySelector(".waitlist-title");
+const waitlistSubTitle = waitlistSection.querySelector(".waitlist-subtitle");
+const waitlistForm = waitlistSection.querySelector("form");
+const waitlistNote = waitlistSection.querySelector(".waitlist-note");
+const otherWaitlistNote = waitlistSection.querySelector(".note");
+
 const animatedParts = [
   sectionIntro,
   featuresContainer,
@@ -147,6 +156,11 @@ const animatedParts = [
   gent,
   sdq,
   gallerySection,
+  waitlistTitle,
+  waitlistSubTitle,
+  waitlistForm,
+  waitlistNote,
+  otherWaitlistNote,
 ];
 
 animatedParts.forEach((part) => observer.observe(part));

@@ -27,7 +27,7 @@ section.waitlist-section {
   font-family: "Inter", sans-serif;
   font-size: 1.05rem;
   font-weight: 400;
-  color: #555;
+  /* color: #555; */
   margin-bottom: 2rem;
   color: #666;
 }
@@ -42,7 +42,7 @@ form.waitlist-form {
 
 .input-group {
   flex-basis: 300px;
-  flex-grow: 1;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -79,6 +79,7 @@ form.waitlist-form {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+  flex-grow: 1;
   cursor: pointer;
   transition:
     background 0.3s,
@@ -105,6 +106,11 @@ form.waitlist-form {
   }
 }
 
+.note{
+  color: #777;
+  font-size: 0.8rem;
+}
+
 .success {
   margin-top: 1rem;
   padding: 0.8rem;
@@ -125,3 +131,21 @@ form.waitlist-form {
   display: none;
 }
 
+.waitlist-title,.waitlist-subtitle{
+  filter: blur(8px);
+  transition: filter 1.2s ease;
+  
+}
+.waitlist-title.show,.waitlist-subtitle.show{
+    filter: blur(0);
+  }
+
+form,.waitlist-note,.note{
+  transform: translateY(100px);
+  transition: transform 2s ease;
+}  
+
+form.show,.waitlist-note.show,.note.show{
+  transform: translateY(0px);
+
+}
