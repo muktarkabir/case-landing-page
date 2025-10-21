@@ -99,11 +99,17 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       console.log(entry.target);
-      entry.target.classList.toggle("show", entry.isIntersecting);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+      // entry.target.classList.toggle("show", entry.isIntersecting);
+      // observer.unobserve(entry.target);
     });
   },
   {
-    threshold: 0.15,
+    threshold: 0.25,
     rootMargin: "50px 0px 0px",
   },
 );
@@ -119,12 +125,13 @@ const missionSection = document.querySelector("section#mission");
 const missionText = missionSection.querySelector(".content");
 const missionImage = missionSection.querySelector(".image-wrapper");
 const teamSection = document.querySelector("section#team");
+const teamText = teamSection.querySelector(".team-text");
 const teamMembers = teamSection.querySelectorAll(".team-member");
 const ahmad = teamMembers[0];
 const mukhtar = teamMembers[1];
 const gent = teamMembers[2];
 const sdq = teamMembers[3];
-
+const gallerySection = document.querySelector("section#gallery");
 const animatedParts = [
   sectionIntro,
   featuresContainer,
@@ -134,11 +141,12 @@ const animatedParts = [
   step3,
   missionImage,
   missionText,
-  teamSection,
+  teamText,
   ahmad,
   mukhtar,
   gent,
   sdq,
+  gallerySection,
 ];
 
 animatedParts.forEach((part) => observer.observe(part));

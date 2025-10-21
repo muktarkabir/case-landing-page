@@ -8,7 +8,7 @@ section.waitlist-section {
   /* margin: 3rem auto; */
   display: flex;
   justify-content: center;
-  min-height: 500px;
+  min-height: 460px;
 }
 
 .waitlist-content {
@@ -124,3 +124,4 @@ form.waitlist-form {
   font-weight: 500;
   display: none;
 }
+
