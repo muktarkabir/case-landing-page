@@ -17,4 +17,4 @@ form.addEventListener("submit", async () => {
   }
 });
 
-// listenForWaitlistCount();
+listenForWaitlistCount();
